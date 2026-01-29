@@ -11,7 +11,7 @@ var DB *sql.DB
 
 func ConnectDB() {
 	var err error
-	DB, err = sql.Open("mysql", "root:Megha@420@tcp(127.0.0.1:3306)/userdb")
+	DB, err = sql.Open("mysql", "@tcp(127.0.0.1:3306)/userdb")
 	if err != nil {
 		log.Fatal(err)
 	}
